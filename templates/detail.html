@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Detail{% endblock %}
+
+{% block content %}
+
+
+    <main class="container">
+        <div class="product-detail">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Classic T-Shirt">
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Classic T-Shirt</h1>
+                <p class="product-price">$19.99</p>
+                <p class="product-description">A comfortable and stylish classic t-shirt perfect for any casual occasion.</p>
+                <div class="product-meta">
+                    <p><strong>Available sizes:</strong> S, M, L, XL</p>
+                    <p><strong>Colors:</strong> White, Black, Gray</p>
+                </div>
+                <a href="basket.html" class="btn btn-primary">Add to Basket</a>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Create New Product{% endblock %}
+
+{% block content %}
+<main class="container">
+        <h1 class="page-title">Create New Product</h1>
+        <div class="form-container">
+            <form class="product-form">
+                <div class="form-group">
+                    <label for="product-name">Product Name</label>
+                    <input type="text" id="product-name" name="product-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-description">Description</label>
+                    <textarea id="product-description" name="product-description" class="form-control" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Price</label>
+                    <input type="number" id="product-price" name="product-price" class="form-control" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-category">Category</label>
+                    <select id="product-category" name="product-category" class="form-control" required>
+                        <option value="">Select a category</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="shoes">Shoes</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="product-image">Product Image</label>
+                    <input type="file" id="product-image" name="product-image" class="form-control" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn btn-primary hover-lift">Create Product</button>
+            </form>
+        </div>
+    </main>
+{% endblock %}

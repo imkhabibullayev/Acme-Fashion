@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome to Acme Fashion{% endblock %}
+
+{% block content %}
+<main class="container">
+    <h1 class="page-title">Welcome to Acme Fashion</h1>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Classic T-Shirt">
+            <h2>Classic T-Shirt</h2>
+            <p class="price">$19.99</p>
+            <a href="detail.html" class="btn btn-primary">View Details</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Denim Jeans">
+            <h2>Denim Jeans</h2>
+            <p class="price">$49.99</p>
+            <a href="detail.html" class="btn btn-primary">View Details</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Sneakers">
+            <h2>Sneakers</h2>
+            <p class="price">$79.99</p>
+            <a href="detail.html" class="btn btn-primary">View Details</a>
+        </div>
+    </div>
+</main>
+{% endblock %}
